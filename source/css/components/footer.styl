@@ -1,0 +1,67 @@
+footer
+    width 100%
+    background #303c3d
+    .grid-footer
+        width 100%
+        display flex
+        justify-content: space-between
+        align-items: center
+        padding 4rem 0
+        +below(1024px)
+            flex-direction column
+        .menu
+            +below(1024px)
+                margin-bottom 2rem
+            +below($bp.sm)
+                display flex
+                flex-direction column
+                align-items: center
+            a
+                font-size 1.5rem
+                font-weight 600
+                color #959d9f
+                text-transform uppercase
+                margin-right 5.5rem
+                transition .3s
+                +below($bp.sm)
+                    margin 0 0 2rem 0
+                &:last-child
+                    margin-right 0
+                &:hover
+                    color: #fff
+        .social
+            +below(1024px)
+                margin-bottom 2rem
+            a
+                font-size 4rem
+                transition .3s
+                &:hover
+                    {$icon-selector}::before
+                        color #fff
+        .info
+            +below(1024px)
+                display flex
+                flex-direction column
+                align-items: center
+            .item
+                display flex
+                align-items: center
+                &:first-child
+                    margin-bottom .5rem
+            .icon
+                font-size 3rem
+                margin-right 1.5rem
+            .phone
+                font-size 1.8rem
+                color #959d9f
+            .mail
+                font-size 1.6rem
+                color #959d9f
+    .bottom
+        width 100%
+        padding 3rem 0
+        display flex
+        justify-content: center
+        background #2e3639
+        img 
+            height 5rem

@@ -1,0 +1,103 @@
+header
+    width 100%
+    position absolute
+    top 0
+    left 0
+    .grid-header
+        height 11.5rem
+        display flex
+        align-items: flex-end
+        padding-bottom 1rem
+        +below(1600px)
+            align-items: center
+        +below(1024px)
+            justify-content: space-between
+    .logo
+        height 6.5rem
+        img 
+            height 100%
+    .menu
+        margin-left 10rem
+        padding-bottom 1.5rem
+        +below(1600px)
+            margin-left 5rem
+            display flex
+            margin-top 3rem
+        +below($bp.lg)
+            margin-left 3rem
+        +below(1024px)
+            display none
+        a
+            font-size: 1.5rem
+            font-weight 600
+            text-transform uppercase
+            color #6f6f6f
+            margin-right 5.5rem
+            padding-top .8rem
+            position relative
+            transition .3s
+            +below(1600px)
+                display inline-block
+                margin-right 3rem
+                display flex
+                max-width 8rem
+                height 3.8rem
+                font-size 1.3rem
+            +below($bp.lg)
+                margin-right 2rem
+            &:last-child
+                padding-bottom 2rem
+            &:after
+                content: ''
+                width 1.6rem
+                height 3px
+                background #00aded
+                position absolute
+                top 0
+                left 0
+                display none
+            &:hover
+                color #2f393b
+                &:after
+                    display block
+        
+    .open-menu
+        font-size 2.5rem 
+        color #00aded
+        display none
+        +below(1024px)
+            display block
+.menu-mobile
+    width 30rem
+    height 100%
+    position fixed
+    top 0
+    right -30rem
+    background #00aded
+    z-index 2
+    padding 3rem 2rem
+    display flex
+    flex-direction column
+    align-items: flex-end
+    transition right .3s ease-in-out
+    a
+        font-size 2rem
+        color #fff
+        margin-bottom 2rem
+        font-weight 600
+    .close-menu
+        font-size: 2rem
+        color #fff
+        position absolute
+        top 2.5rem
+        left 2rem
+
+.overlay-menu
+    width 100%
+    height 100%
+    background rgba(0,173,237,0.4)
+    z-index 1
+    position fixed
+    top 0
+    left 0
+    display none

@@ -1,0 +1,72 @@
+.about
+    display flex
+    justify-content: flex-end
+    background #009aed
+    position relative
+    .left
+        width 50%
+        height 100%
+        position absolute
+        top -13.5rem
+        left 0
+        background url('../img/app.png') right top no-repeat
+        +below($bp.md)
+            display none
+    .container
+        padding 8rem 0
+        display flex
+        justify-content: flex-end
+    .right
+        width 121rem
+        margin 0 auto
+        padding: 5rem 2rem 5rem 0
+        display flex
+        justify-content: flex-end
+    .content
+        width 45%
+        position relative
+        +below($bp.md)
+            width 100%
+            padding-left 2rem
+        h2
+            font-size 4.4rem
+            color: #fff
+            margin-bottom 2.5rem
+            +below($bp.sm)
+                font-size 3rem
+            span 
+                font-size 9rem
+                color #ffd210
+                +below($bp.sm)
+                    font-size 5rem
+        p
+            font-size 2.1rem
+            line-height 1.38
+            color #fff
+            margin-bottom 2.5rem
+        ul
+            list-style none
+            padding 0
+            li
+                display flex
+                font-size 2.1rem
+                font-weight bold
+                color #fff
+                line-height 3rem
+                margin-bottom 1.5rem
+                span 
+                    font-size .7rem
+                    color #ffd210
+                    padding-top 1.3rem
+                    margin-right 1rem
+        .triangle
+            width: 0
+            height: 0
+            border-style: solid
+            border-width: 25px 20px 0 20px
+            border-color: #e7e7e7 transparent transparent transparent
+            position absolute
+            top -5rem
+            left 0
+            +below(1600px)
+                display none

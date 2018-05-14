@@ -1,0 +1,85 @@
+.banner
+    width 100%
+    background: url(../img/fundo-header.jpg) top right no-repeat
+    +below(1600px)
+        background-size: auto 100%
+        background-position top right
+    +below(1024px)
+        background: url(../img/header-mobile.jpg) top right no-repeat
+    & .grid-banner
+        height 79.3rem
+        display flex
+        align-items: center
+        +below(1600px)
+            flex-direction column
+            align-items: flex-start
+            justify-content: center
+            height auto
+            padding 5rem 0 15rem
+        +below(1024px)
+            align-items: center
+        +below($bp.sm)
+            padding-bottom 5rem
+    .title
+        width 52rem
+        +below(1600px)
+            padding-top 10rem
+        +below(1024px)
+            width 100%
+        h1
+            font-size 4.4rem
+            color #2f393b
+            +below(1024px)
+                text-align center
+            +below($bp.sm)
+                font-size 3
+            span 
+                font-size 8.5rem
+                color #00aded
+                +below(1024px)
+                    font-size 5rem
+        p
+            font-size 2.1rem
+            color #636363
+            margin-top 5rem
+            line-height 3.5rem
+            +below(1024px)
+                text-align center
+                font-size: 1.8rem
+    .links
+        width 50rem
+        margin-left 9rem
+        +below(1600px)
+            margin 5rem 0 0 0
+        +below($bp.sm)
+            display flex
+            width 100%
+            justify-content: space-around
+        .row
+            width 100%
+            display flex
+            justify-content: space-between
+            align-items: center
+            +below($bp.sm)
+                display flex
+                flex-direction column
+                align-items: center
+                img 
+                    margin-bottom: 2rem
+            &:first-child
+                margin-bottom 3.5rem
+                +below($bp.sm)
+                    margin-bottom 0
+            &:last-child
+                margin-bottom 18rem
+                +below(1600px)
+                    margin-bottom 0
+            .logo
+                width 11.9rem
+                margin-right 5rem
+                +below($bp.sm)
+                    margin 0 0 2rem 0
+            .app-store
+                width 13rem
+            .google-play
+                width 16.2rem

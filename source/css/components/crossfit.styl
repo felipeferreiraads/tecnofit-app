@@ -1,0 +1,70 @@
+.crossfit
+    width 100%
+    background url(../img/bg-crossfit.jpg) bottom right no-repeat
+    background-size: auto 100%
+    padding 9rem 0 0
+    .container
+        display flex
+        +below($bp.md)
+            flex-direction column
+        .left
+            flex-basis 50%
+            position relative
+            h2
+                font-size 8rem
+                color #e64095
+                margin-bottom 3rem
+                +below($bp.md)
+                    font-size 5rem
+                    margin-bottom 2rem
+                +below($bp.sm)
+                    text-align center
+                    font-size 3rem
+            p
+                font-size 4rem
+                font-weight bold
+                color #fff
+                max-width 55%
+                +below($bp.md)
+                    max-width 100%
+                    font-size 3rem
+                +below($bp.sm)
+                    font-size 2.5rem
+                    text-align center
+                    margin-bottom 3rem
+            img 
+                position absolute
+                right -9rem
+                bottom -11rem
+                +below(1280px)
+                    width 40rem
+                +below($bp.lg)
+                    width 30rem
+                +below($bp.md)
+                    display none
+
+        .right
+            flex-basis 45%
+            padding 0 0 13rem 3rem
+            +below($bp.md)
+                padding-left 0
+            p
+                font-size 2.1rem
+                line-height 1.38
+                color #fff
+                margin-bottom 3rem
+            ul
+                list-style none
+                padding 0
+                li
+                    display flex
+                    font-size 2.1rem
+                    font-weight bold
+                    color #fff
+                    line-height 3rem
+                    margin-bottom 1.5rem
+                    span 
+                        font-size .7rem
+                        color #e64095
+                        padding-top 1.3rem
+                        margin-right 1rem

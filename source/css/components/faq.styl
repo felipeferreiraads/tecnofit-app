@@ -1,0 +1,46 @@
+.faq
+    width 100%
+    background #f6f9f9
+    padding 14rem 0 10rem
+    +below($bp.sm)
+        padding 7rem 0
+    .grid-faq
+        width 100%
+        display flex
+        +below($bp.sm)
+            flex-wrap: wrap
+        h2
+            font-size: 8rem
+            flex-basis 40rem
+            +below($bp.md)
+                font-size 5rem
+                flex-basis 25rem
+            +below($bp.sm)
+                flex-basis 100%
+        .questions
+            flex 1
+            padding-left 10%
+            +below($bp.sm)
+                margin-top 3rem
+                padding 0
+            details
+                border-bottom 1px solid #dbdbdb
+                margin-bottom 3rem
+                &:first-child
+                    padding-top 3rem
+                summary
+                    display flex
+                    justify-content: space-between
+                    cursor pointer
+                    span 
+                        font-size 2.2rem
+                        padding-bottom 2rem
+                    img 
+                        padding-top 3px
+                        align-self: flex-start
+                p
+                    font-size 1.6rem
+                    line-height 1.75
+                    color #636363
+                    &:last-child
+                        padding-bottom 2rem
